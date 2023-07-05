@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .thumbnail {
+      max-width: auto;
+      max-height: 200px;
+      margin-top: 10px;
+    }
+  </style>
+  <title>Customer Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center">Customer Form</h2>
+    <form action="submit.php" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="text" class="form-control" name="year" required>
+      </div>
+      <div class="form-group">
+        <label for="make">Make:</label>
+        <input type="text" class="form-control" name="make" required>
+      </div>
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" class="form-control" name="model" required>
+      </div>
+      <div class="form-group">
+        <label for="trim">Trim (optional):</label>
+        <input type="text" class="form-control" name="trim">
+      </div>
+      <div class="form-group">
+        <label for="vin">VIN#:</label>
+        <input type="text" class="form-control" name="vin" required>
+      </div>
+      <div class="form-group">
+        <label for="images">Upload Image 1:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage1(event)">
+        <div id="imagePreview1"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div>
+        <label for="images">Upload Image 2:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage2(event)">
+        <div id="imagePreview2"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div>
+        <label for="images">Upload Image 3:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage3(event)">
+        <div id="imagePreview3"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 4:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage4(event)">
+        <div id="imagePreview4"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div>
+        <label for="images">Upload Image 5:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage5(event)">
+        <div id="imagePreview5"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 6:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage6(event)">
+        <div id="imagePreview6"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 7:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage7(event)">
+        <div id="imagePreview7"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 8:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage8(event)">
+        <div id="imagePreview8"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 9:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage9(event)">
+        <div id="imagePreview9"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 10:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage10(event)">
+        <div id="imagePreview10"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 11:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage11(event)">
+        <div id="imagePreview11"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 12:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage12(event)">
+        <div id="imagePreview12"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 13:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage13(event)">
+        <div id="imagePreview13"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 14:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage14(event)">
+        <div id="imagePreview14"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div> <label for="images">Upload Image 15:</label>
+        <input type="file" class="form-control-file" name="images[]" multiple required onchange="previewImage15(event)">
+        <div id="imagePreview15"></div>
+        <div class="form-group">
+          <label for="image_comments">Image Comment:</label>
+          <textarea class="form-control" name="image_comments[]" rows="1"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" class="form-control" name="first_name" required>
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" class="form-control" name="last_name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" class="form-control" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="package">Choose a Package:</label>
+        <select class="form-control" name="package" required>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+          <option value="full">Full</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
