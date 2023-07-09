@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parts List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        .table-link {
-            display: block;
-            text-decoration: none;
+        .table-border-css {
+            border: 1px solid lightgray;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -17,7 +26,7 @@
 <body>
     <div class="container mt-5">
         <h1>Parts List</h1>
-        <table class="table table-striped table-bordered">
+        <table class="table-border-css">
             <thead>
                 <tr>
                     <th>Part Name</th>
@@ -26,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="haha">
                     <td>Part 1</td>
                     <td>12345</td>
                     <td>
@@ -80,7 +89,6 @@
         </table>
     </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
