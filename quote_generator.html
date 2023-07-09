@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
-
-
     .vertical-line {
       position: absolute;
       top: 0;
@@ -23,6 +21,10 @@
       width: 100%;
       background-color: blue;
     }
+    .right-my-text{
+      float: right;
+      margin-top: -20px;
+    }
   </style>
   <title>Quote Generator</title>
 </head>
@@ -31,44 +33,45 @@
   <div class="container">
     <h1 class="text-center">Quote Generator</h1>
     <form>
-      <div class="form-group">
+      <div class="form-box">
         <label for="customerName">Customer Name:</label>
         <input type="text" class="form-control" id="customerName" name="customerName"
           placeholder="Enter customer's name">
       </div>
-      <div class="form-group">
+      <div class="form-box">
         <label for="carVIN">Car VIN:</label>
         <input type="text" class="form-control" id="carVIN" name="carVIN" placeholder="Enter car VIN">
       </div>
       <h2>Parts</h2>
       <div class="border border-primary" id="parts">
-        <div class="form-group">
+        <div class="form-box">
           <label for="partName">Part Name:</label>
           <input type="text" class="form-control" id="partName" name="partName" placeholder="Enter part name">
         </div>
-        <div class="form-group">
+        <div class="form-box">
           <label for="partNumber">Part Number:</label>
           <input type="text" class="form-control" id="partNumber" name="partNumber" placeholder="Enter part number">
         </div>
-        <div class="form-group">
+        <div class="form-box">
           <label for="link1">Link 1:</label>
           <input type="text" class="form-control" id="link1" name="link1" placeholder="Enter link 1">
         </div>
-        <div class="form-group">
+        <div class="form-box">
           <label for="link2">Link 2:</label>
           <input type="text" class="form-control" id="link2" name="link2" placeholder="Enter link 2">
         </div>
-        <div class="form-group">
+        <div class="form-box">
           <label for="link3">Link 3:</label>
           <input type="text" class="form-control" id="link3" name="link3" placeholder="Enter link 3">
         </div>
-        <div class="form-group">
+        <div class="form-box">
           <label for="link4">Link 4:</label>
           <input type="text" class="form-control" id="link4" name="link4" placeholder="Enter link 4">
         </div>
         <div class="line"></div>
       </div>
-      <div class="text-right"><button id="addMore" type="button" class="btn btn-primary saveadd" onclick="">Save & Add
+      <div class="right-my-text"><button id="addMore" type="button" class="btn btn-primary saveadd" onclick="">Save &
+          Add
           New</button></div>
 
       <button type="button" class="btn btn-primary" onclick="addEntry()">Generate</button>

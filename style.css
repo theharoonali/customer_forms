@@ -9,21 +9,18 @@ input {
   padding: 10px;
   border: 1px solid lightgrey;
 }
-.form-group {
+.form-box {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.button-submit {
-  margin-left: 10px;
-}
+
 .form-control {
   width: 100%;
   padding: 5px;
   padding: 10px;
   border: 1px solid lightgrey;
 }
-button{
+button {
   padding: 5px;
-  margin:5px 100px;
+  margin: 10px 0px;
 }
-
