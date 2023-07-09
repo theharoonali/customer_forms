@@ -10,6 +10,7 @@ addButton.addEventListener("click", function () {
 
   inputCount++;
 
+  var numberContainerDiv = createNumberContainer(inputCount);
   var partNameDiv = createFormGroup(
     "partName",
     "Part Name:",
@@ -25,6 +26,7 @@ addButton.addEventListener("click", function () {
   var link3Div = createFormGroup("link3", "Link 3:", "Enter link 3");
   var link4Div = createFormGroup("link4", "Link 4:", "Enter link 4");
 
+  container.appendChild(numberContainerDiv);
   container.appendChild(partNameDiv);
   container.appendChild(partNumberDiv);
   container.appendChild(link1Div);
@@ -34,6 +36,28 @@ addButton.addEventListener("click", function () {
 
   addVerticalLine();
 });
+
+function createNumberContainer(count) {
+  var numberContainerDiv = document.createElement("div");
+  numberContainerDiv.id = "numberContainer";
+
+  var numberHeader = document.createElement("h4");
+  numberHeader.className = "number";
+  numberHeader.textContent = "Number: ";
+
+  var numberSpan = document.createElement("span");
+  numberSpan.className = "plusnum";
+  numberSpan.textContent = formatNumber(count);
+
+  numberHeader.appendChild(numberSpan);
+  numberContainerDiv.appendChild(numberHeader);
+
+  return numberContainerDiv;
+}
+
+function formatNumber(number) {
+  return number.toString().padStart(2, "0");
+}
 
 function createFormGroup(id, labelContent, placeholder) {
   var formGroupDiv = document.createElement("div");
@@ -57,11 +81,6 @@ function createFormGroup(id, labelContent, placeholder) {
 }
 
 function addVerticalLine() {
-  var verticalLine = document.createElement("div");
-  verticalLine.className = "vertical-line";
-  container.appendChild(verticalLine);
-
-  // Add line class div at the end
   var lineDiv = document.createElement("div");
   lineDiv.className = "line";
   container.appendChild(lineDiv);

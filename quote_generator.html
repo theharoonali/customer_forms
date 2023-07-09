@@ -43,6 +43,11 @@
         <input type="text" class="form-control" id="carVIN" name="carVIN" placeholder="Enter car VIN">
       </div>
       <h2>Parts</h2>
+      <p style="margin-top:-10px">You can add upto 50 parts</p>
+      <div class="parts-class">
+      <div id="numberContainer">
+        <h4 class="number">Number: <span class="plusnum">01</span></h4>
+      </div>
       <div class="border border-primary" id="parts">
         <div class="form-box">
           <label for="partName">Part Name:</label>
@@ -70,10 +75,7 @@
         </div>
         <div class="line"></div>
       </div>
-      <div class="right-my-text"><button id="addMore" type="button" class="btn btn-primary saveadd" onclick="">Save &
-          Add
-          New</button></div>
-
+      <div class="right-my-text"><button id="addMore" type="button" class="btn btn-primary saveadd" onclick="">Save & Add New</button></div></div>
       <button type="button" class="btn btn-primary" onclick="addEntry()">Generate</button>
     </form>
   </div>
